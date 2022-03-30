@@ -178,8 +178,30 @@
 
         <!--Gallery-->
         <section>
-            <div class="page-header" id="section-features">
-                <h2>Features. <small>These are the features of our product</small></h2>
+            <div class="page-holder" id="section-gallery">
+                <h2>Gallery. <small>Take a look at our products in the gallery</small></h2>
+            </div>
+            <div class="carousel-slide" id="gallery-carousel" data-ride="carousel">
+                <ol class="carousel indicators">
+                    <li data-target="#gallery-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#gallery-carousel" data-slide-to="1"></li>
+                    <li data-target="#gallery-carousel" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item">
+                        <img src="/images/monkey.jpg" alt="slider-img" images="">
+                        <div class="carousel-caption">This is the caption</div>
+                    </div>
+                    <div class="item">
+                        <img src="/images/royality.jpg" alt="slider-img" images="">
+                        <div class="carousel-caption">This is the caption</div>
+                    </div>
+                    <div class="item">
+                        <img src="/images/book.jpg" alt="slider-img" images="">
+                        <div class="carousel-caption">This is the caption</div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -206,28 +228,29 @@
 
 
         <section>
-            <div class="well">
-                <div class="container text-center">
-                    <h3>Subscribe for our 30-day trial!!</h3>
-                    <p>Enter your name and email below</p>
+                <div class="well">
+                    <div class="container text-center">
+                        <h3>Subscribe for our 30-day trial!!</h3>
+                        <p>Enter your name and email below</p>
 
-                    <!--Form for the trial-->
-                    <form action="#" class="form-inline" role="form">
-                        <div class="form-group">
-                            <label for="subscribe-name" class="sr-only">Name</label>
-                            <input type="text" class="form-control" id="subscribe-name" placeholder="Name">
-                        </div><!--End form-group-->
+                        <!--Form for the trial-->
+                        <form action="#" class="form-inline" role="form">
+                            <div class="form-group">
+                                <label for="subscribe-name" class="sr-only">Name</label>
+                                <input type="text" class="form-control" id="subscribe-name" placeholder="Name">
+                            </div><!--End form-group-->
 
-                        <div class="form-group">
-                            <label for="subscribe-email" class="sr-only">Email</label>
-                            <input type="text" class="form-control" id="subscribe-email" placeholder="Email">
-                        </div><!--End form-group-->
+                            <div class="form-group">
+                                <label for="subscribe-email" class="sr-only">Email</label>
+                                <input type="text" class="form-control" id="subscribe-email" placeholder="Email">
+                            </div><!--End form-group-->
 
-                        <button type="submit" class="btn btn-default">Subcribe</button>
-                        <p><small><em>Your email will not be used for SPAM</em></small></p>
-                    </form>
-                </div><!--End container-->
-            </div><!--End well class-->
+                            <button type="submit" class="btn btn-default">Subcribe</button>
+                            <p><small><em>Your email will not be used for SPAM</em></small></p>
+                        </form>
+                    </div><!--End container-->
+                </div><!--End well class-->
         </section>
-</body>
+
+    </body>
 </html>
