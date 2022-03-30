@@ -12,7 +12,7 @@
 
     <!--Older CSS and Bootstrap Classes-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.mins.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
     <style>
@@ -47,7 +47,7 @@
                     <li><a href="#section-testimonials">Testimonails</a></li>
                     <li><a href="#section-features">Features</a></li>
                     <li><a href="#sections-gallery">Gallery</a></li>
-                    <li><a href="#section-fad">FAQ</a></li>
+                    <li><a href="#section-faq">FAQ</a></li>
                     <li><a href="#section-contact">Contact Us</a></li>
                 </ul>
             </div>
@@ -212,8 +212,10 @@
                 </form>
             </div>
             <!--End container-->
+
         </div>
         <!--End well class-->
+
     </section>
 
 
@@ -237,31 +239,163 @@
                 </ol>
 
 
-                <div class="carousel-inner">
+                <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="/images/flowers.jpg" alt="Slider image" images="">
-                        <div class="carousel-caption">Monkey</div>
+                        <img src="images/flowers.jpg" alt="Slider image" images="">
+                        <div class="carousel-caption">Flowers</div>
                     </div>
                     <div class="item">
-                        <img src="/images/Smart-City.jpg" alt="Slider image" images="">
-                        <div class="carousel-caption">Royality</div>
+                        <img src="images/Smart-City.jpg" alt="Slider image" images="">
+                        <div class="carousel-caption">City</div>
                     </div>
                     <div class="item">
-                        <img src="/images/fall.jpg" alt="Slider image" images="">
-                        <div class="carousel-caption">Book</div>
+                        <img src="images/fall.jpg" alt="Slider image" images="">
+                        <div class="carousel-caption">Fall</div>
                     </div>
                 </div>
 
-                <a href="#gallery-carousel" class="left carousel-control" data-slide="prev">
+                <a href="#gallery-carousel" class="left carousel-control" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                 </a>
-                <a href="#gallery-carousel" class="right carousel-control" data-slide="next">
+                <a href="#gallery-carousel" class="right carousel-control" role="button" data-slide="next">
                     <span class="glyphicon glyphicon-chevron-right"></span>
                 </a>
             </div>
-        </section>
-    </div>
 
+        </section>
+
+
+
+
+
+        <!--FAQ-->
+        <section>
+            <div class="page-header" id="section-faq">
+                <h2>FAQ. <small>This will help you to get started.</small></h2>
+            </div>
+
+            <div class="panel-group" id="accordion-qa">
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a href="#qa-1" data-toggle="collapse" data-parent="#accordion-qa">Question 1</a></h4>
+                    </div>
+
+                    <div class="panel-collapse collapse in" id="qa-1">
+                        <div class="panel-body">
+                            What made you interested in our product??
+                        </div>
+                        <!--End panel-body-->
+                    </div> <!--End collapse-->
+                </div> <!--End panel panel-default-->
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a href="#qa-2" data-toggle="collapse" data-parent="#accordion-qa">Question 2</a></h4>
+                    </div>
+
+                    <div class="panel-collapse collapse" id="qa-2">
+                        <div class="panel-body">
+                            Who or what recommended our products to you??
+                        </div>
+                        <!--End panel-body-->
+                    </div> <!--End collapse-->
+                </div> <!--End panel panel-default-->
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a href="#qa-3" data-toggle="collapse" data-parent="#accordion-qa">Question 3</a></h4>
+                    </div>
+
+                    <div class="panel-collapse collapse" id="qa-3">
+                        <div class="panel-body">
+                            Do you have any friends/family that would be interested in buying from us??
+                        </div>
+                        <!--End panel-body-->
+                    </div> <!--End collapse-->
+                </div> <!--End panel panel-default-->
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a href="#qa-4" data-toggle="collapse" data-parent="#accordion-qa">Question 4</a></h4>
+                    </div>
+
+                    <div class="panel-collapse collapse" id="qa-4">
+                        <div class="panel-body">
+                            Do you see yourself buying from us anytime soon??
+                        </div>
+                        <!--End panel-body-->
+                    </div> <!--End collapse-->
+                </div> <!--End panel panel-default-->
+
+
+            </div> <!--End panel-group-->
+          
+        </section>
+
+
+
+
+
+
+        
+        <section>
+            <div class="page-header" id="section-contact">
+                <h2>Contact Us. <small>Please don't hesitate to get in touch with us</small></h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <p>To send us a message, just use the contact form below</p>
+
+                    <address>
+                        <strong>Web Labs. Ltd</strong><br />
+                        Lisbon, Portugal 2780-105<br />
+                        <abbr title="Phone">Phone: </abbr> +3519827005
+                    </address>
+                </div>
+
+                <div class="col-lg-8">
+                    <form action="#" class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="contact-name" class="col-lg-2 control-label">Name</label>
+
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="contact-name" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email" class="col-lg-2 control-label">Email</label>
+
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="contact-email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message" class="col-lg-2 control-label">Message</label>
+
+                            <div class="col-lg-10">
+                                <textarea name="contact-message" id="contact-message" class="form-control" cols="30" rows="10" placeholder="Your message">
+
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-10 col-lg-offset-2">
+                                <button type="submit" class="btn btn-primary">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section> 
+
+    </div>
+    <!--End container-->
 
 </body>
 
@@ -270,20 +404,3 @@
 
 
 
-<!-- 
-        
-            <section>
-                <div class="page-header" id="section-features">
-                    <h2>Features. <small>These are the features of our product</small></h2>
-                </div>
-            </section>
-
-
-
-
-            
-            <section>
-                <div class="page-header" id="section-features">
-                    <h2>Features. <small>These are the features of our product</small></h2>
-                </div>
-            </section> -->
